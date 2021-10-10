@@ -7,7 +7,7 @@
 - Vue.js
   - Vuex
   - Vue Router
-  - Sass Loader
+  - Scss Loader
   - axios
 
 ### バックエンド
