@@ -23,51 +23,51 @@
 ### リレーショナルデータベース
 ###### Port 3306
 - MySQL80
-  - テーブル一覧
-  +------------------+
-  | Tables_in_db_hrm |
-  +------------------+
-  | field            |
-  | hr_data          |　<= メインデータ
-  | post             |
-  | section          |
-  +------------------+
-    - field Table
-    +------------+--------------+------+-----+---------+-------+
-    | Field      | Type         | Null | Key | Default | Extra |
-    +------------+--------------+------+-----+---------+-------+
-    | id         | varchar(255) | YES  |     | NULL    |       |
-    | name       | varchar(255) | YES  |     | NULL    |       |
-    | gender     | varchar(255) | YES  |     | NULL    |       |
-    | birthday   | varchar(255) | YES  |     | NULL    |       |
-    | other      | varchar(255) | YES  |     | NULL    |       |
-    | section_id | varchar(255) | YES  |     | NULL    |       |
-    | post_id    | varchar(255) | YES  |     | NULL    |       |
-    +------------+--------------+------+-----+---------+-------+
-    - hr_data Table
-    +------------+--------------+------+-----+---------+-------+
-    | Field      | Type         | Null | Key | Default | Extra |
-    +------------+--------------+------+-----+---------+-------+
-    | id         | int          | NO   | PRI | NULL    |       |
-    | name       | varchar(255) | YES  |     | NULL    |       |
-    | gender     | varchar(255) | YES  |     | NULL    |       |
-    | birthday   | int          | YES  |     | NULL    |       |
-    | other      | varchar(255) | YES  |     | NULL    |       |
-    | section_id | int          | YES  |     | NULL    |       |
-    | post_id    | int          | YES  |     | NULL    |       |
-    +------------+--------------+------+-----+---------+-------+
-    - post Table
-    +-------+--------------+------+-----+---------+----------------+
-    | Field | Type         | Null | Key | Default | Extra          |
-    +-------+--------------+------+-----+---------+----------------+
-    | id    | int          | NO   | PRI | NULL    | auto_increment |
-    | name  | varchar(255) | YES  |     | NULL    |                |
-    +-------+--------------+------+-----+---------+----------------+
-    - section Table
-    +-------+--------------+------+-----+---------+----------------+
-    | Field | Type         | Null | Key | Default | Extra          |
-    +-------+--------------+------+-----+---------+----------------+
-    | id    | int          | NO   | PRI | NULL    | auto_increment |
-    | name  | varchar(255) | YES  |     | NULL    |                |
-    +-------+--------------+------+-----+---------+----------------+
+
+1. テーブル一覧  
+
+|Tables_in_db_hrm|
+| ------------- |
+| field |
+| hr_data | 
+| post|
+| section|
+
+2. field テーブル
+
+|Field| Type| Null|Key|Default|Extra|
+| --- | --- | --- | --- | --- | --- |
+| id         | varchar(255) | YES  |     | NULL    |     |
+| name       | varchar(255) | YES  |     | NULL    |      |
+| gender     | varchar(255) | YES  |    | NULL    |      |
+| birthday   | varchar(255) | YES  |     | NULL    |     |
+| other      | varchar(255) | YES  |     | NULL    |      |
+| section_id | varchar(255) | YES  |     | NULL    |     |
+| post_id    | varchar(255) | YES  |     | NULL    |      |
+
+3. hr_data テーブル
+
+| Field      | Type         | Null | Key | Default | Extra |
+| --- | --- | --- | --- | --- | --- |
+| id         | int          | NO   | PRI | NULL    |       |
+| name       | varchar(255) | YES  |     | NULL    |       |
+| gender     | varchar(255) | YES  |     | NULL    |       |
+| birthday   | int          | YES  |     | NULL    |       |
+| other      | varchar(255) | YES  |     | NULL    |       |
+| section_id | int          | YES  |     | NULL    |       |
+| post_id    | int          | YES  |     | NULL    |       |
+
+4. post テーブル
+
+| Field | Type         | Null | Key | Default | Extra          |
+| --- | --- | --- | --- | --- | --- |
+| id    | int          | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(255) | YES  |     | NULL    |                |
+
+5. section テーブル
+
+| Field | Type         | Null | Key | Default | Extra          |
+| --- | --- | --- | --- | --- | --- |
+| id    | int          | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(255) | YES  |     | NULL    |                |
 
